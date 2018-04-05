@@ -64,6 +64,8 @@ data "aws_ami" "default_ami" {
         name = "name"
         values = [ "CentOS Linux 7 x86_64*" ]
     }
+
+    most_recent = "true"
 }
 
 # Store it as a variable
