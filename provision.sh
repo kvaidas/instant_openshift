@@ -54,3 +54,6 @@ oc cluster up \
     --host-volumes-dir=/root/origin/volumes \
     --use-existing-config \
     --public-hostname=$PUBLIC_IP
+
+# Pre-configure oc client
+oc login -u <USERNAME> -p <PASSWORD> --insecure-skip-tls-verify https://$PUBLIC_IP:8443
